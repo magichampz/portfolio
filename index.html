@@ -21,6 +21,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xrF/lRaVq8g0uCkG3rJMNStZrioj9qwoF2T+OM5sqc5up3pf6+bvFdbOu/JwBzKW5c2Fez/+FmPh7JzkaVrG9w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Put your site title here -->
   <title>
@@ -41,13 +42,9 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -56,13 +53,19 @@
       <div class="header__text">
         <h1 class="heading-primary">
           <!-- Replace the following name with your name -->
-          <span>Syed Ali Hussnain</span>
+          <span>Aveek Goswami</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>A Web Developer based in Lahore, Pakistan.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <p>Computational Bioengineering Undergraduate <br> Deep Learning Engineer</p>
+        <div class="button-container">
+          <a href="https://magichampz.github.io/resume/aveek-cv.pdf" class="btn">View CV</a>
+          <a href="https://github.com/magichampz" class="btn"><img src="images/github.svg" alt="GitHub" class="btn-icon"> GitHub</a>
+          <a href="https://www.linkedin.com/in/aveekg00/" class="btn"><img src="images/linkedin.svg" alt="LinkedIn" class="btn-icon"> LinkedIn</a>
+          <a href="https://medium.com/@aveekgoswami" class="btn"><img src="images/medium.svg" alt="Medium" class="btn-icon"> Medium</a>
+        </div>
       </div>
     </div>
+    
   </header>
 
   <main role="main">
@@ -70,7 +73,7 @@
 
     <div id="portfolio" class="paddsection">
 
-      <div class="container">
+      <div class="container" id="work">
         <div class="row">
           <h2>Projects</h2>
         </div>
@@ -82,9 +85,9 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-work">Work</li>
+              <li data-filter=".filter-school">School</li>
+              <li data-filter=".filter-personal">Personal</li>
             </ul>
           </div>
         </div>
@@ -94,60 +97,115 @@
               
             <!-- Each div with the work__box class is a project. -->
 
-            <div class="work__box filter-app">
-              <div class="work__text" data-category="app">
-                <h3>Portfolio Template</h3>
+            <div class="work__box filter-work">
+              <div class="work__text" data-category="work">
+                <h3>Sachiv.AI</h3>
                 <p>
-                  A free Open Source Portfolio for anyone to use for free.
+                  Building the number one AI Program Manager for businesses. 
+                  Enters your meetings and organises your teams' tasks, calendars, information seamlessly
                 </p>
-                <ul class="work__list">
-                  <li>HTML</li>
-                  <li>SCSS</li>
-                  <li>JavaScript</li>
-                  <li>Parcel</li>
-                </ul>
+                <p>
+                  Contact me if you want to get involved
+                </p>
 
                 <div class="work__links">
-                  <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                    <img src="./images/github.svg" class="work__code" alt="GitHub">
+                  <a href="https://sachiv.ai" target="_blank" class="link__text">
+                    Visit Website <span>&rarr;</span>
                   </a>
                 </div>
               </div>
               <div class="work__image-box">
-                <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+                <a href="https://www.youtube.com/watch?v=onGgz-uZgmY" target="_blank">
+                  <!-- <img src="https://www.youtube.com/watch?v=onGgz-uZgmY" class="work__image" alt="YouTube Video Thumbnail" /> -->
+                  <img src="./images/sachiv-youtube-screenshot.png" class="work__image" alt="YouTube Video Thumbnail" />
+                </a>              
               </div>
             </div>
 
-            <div class="work__box filter-web">
-              <div class="work__text" data-category="web">
-                <h3>Calculator</h3>
+            <div class="work__box filter-personal">
+              <div class="work__text" data-category="personal">
+                <h3>Veekly Bobangs</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                  eius.
+                  Building the ultimate deals app. View promotions near you from multiple sources, conveniently displayed on a map at your location.
                 </p>
                 <ul class="work__list">
-                  <li>React</li>
-                  <li>Next.js</li>
-                  <li>Node</li>
-                  <li>MongoDB</li>
+                  <li>React Native</li>
+                  <li>Python web scraping</li>
                 </ul>
 
                 <div class="work__links">
-                  <a href="#" class="link__text">
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a href="#">
-                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                  <a href="https://youtube.com/shorts/C_KEpVR6UW8?feature=share" class="link__text" target="_blank">
+                    View Demo <span>&rarr;</span>
                   </a>
                 </div>
               </div>
               <div class="work__image-box">
-                <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+                <img src="./images/veekly-bobangs-screenshot-wide.png" class="work__image" alt="Veekly Bobangs Prototype screenshot" />
               </div>
             </div>
+
+            <div class="work__box filter-work">
+              <div class="work__text" data-category="work">
+                <h3>Machine Learning Lego Sorter</h3>
+                <p>
+                  Created a real-time object recognition, image capturing and classification system for lego technic pieces
+                  Uses a self-designed CNN built with tensorflow achieving 93% accuracy
+                </p>
+
+                <div class="work__links">
+                  <a href="https://medium.com/towards-data-science/enhancing-nullspace-robotics-capabilities-building-a-lego-sorter-with-advanced-object-recognition-7ba5d70c9902" target="_blank" class="link__text">
+                    View Article <span>&rarr;</span>
+                  </a>
+                  <a href="https://github.com/magichampz/lego-sorting-machine-ag-ak/" target="_blank" class="link__text">
+                    View Code <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/cropped-lego-sorter.jpeg" class="work__image" alt="Veekly Bobangs Prototype screenshot" />
+              </div>
+            </div>
+
+            <div class="work__box filter-work">
+              <div class="work__text" data-category="work">
+                <h3>Deep Learning for Macular Thickness Prediction</h3>
+                <p>
+                  Designed CNNs and GANs for prediction of retinal thickness values. 
+                  To aid in the diagnosis of Age-related Macular Degeneration (AMD). 
+                </p>
+
+                <div class="work__links">
+                  <a href="https://remidio.com" target="_blank" class="link__text">
+                    Visit Remidio <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/sample-output-graphic.png" class="work__image" alt="Veekly Bobangs Prototype screenshot" />
+              </div>
+            </div>
+
+            <div class="work__box filter-school">
+              <div class="work__text" data-category="school">
+                <h3>Breast Cancer Risk Web App</h3>
+                <p>
+                  Designed a CNN for breast density Bi-RADS classification, deployed onto a web application using Streamlit.
+                </p>
+
+                <div class="work__links">
+                  <a href="https://breast-cancer-masking-webapp-7bdeafc2e921.herokuapp.com" target="_blank" class="link__text">
+                    Try the app <span>&rarr;</span>
+                  </a>
+                  <a href="https://github.com/racketmaestro/Breast-Cancer-Masking-WebApp" target="_blank" class="link__text">
+                    View Code <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/breast-web-app-screenshot.png" class="work__image" alt="Veekly Bobangs Prototype screenshot" />
+              </div>
+            </div>
+
 
           </div>
         </div>
@@ -160,119 +218,6 @@
     </div><!-- End Portfolio Section -->
 
 
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
-      <div class="row">
-        <h2>Projects</h2>
-
-          <div class="work__boxes">
-            
-            <!-- Each div with the work__box class is a project. -->
-
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Portfolio Template</h3>
-                <p>
-                  A free Open Source Portfolio for anyone to use for free.
-                </p>
-                <ul class="work__list">
-                  <li>HTML</li>
-                  <li>SCSS</li>
-                  <li>JavaScript</li>
-                  <li>Parcel</li>
-                </ul>
-
-                <div class="work__links">
-                  <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                    <img src="./images/github.svg" class="work__code" alt="GitHub">
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-              </div>
-            </div>
-
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Calculator</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                  eius.
-                </p>
-                <ul class="work__list">
-                  <li>React</li>
-                  <li>Next.js</li>
-                  <li>Node</li>
-                  <li>MongoDB</li>
-                </ul>
-
-                <div class="work__links">
-                  <a href="#" class="link__text">
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a href="#">
-                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <img src="./images/project-2.png" class="work__image" alt="Project 1" />
-              </div>
-            </div>
-
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Notificator</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                  eius.
-                </p>
-                <ul class="work__list">
-                  <li>React</li>
-                  <li>Next.js</li>
-                  <li>Node</li>
-                  <li>MongoDB</li>
-                </ul>
-
-                <div class="work__links">
-                  <a href="#" class="link__text">
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a href="#">
-                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** Clients ***** -->
-
-    <section class="client" id="clients">
-      <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
-        </div>
-      </div>
-    </section>
 
     <!-- ***** About ***** -->
 
@@ -283,43 +228,23 @@
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
+              Penultimate year Computational Bioengineering undergraduate with extensive experience applying machine 
+              learning concepts and building high-quality software products through industry internships, college 
+              projects and personal endeavours. I’m constantly building my technical skillset and with my commitment to 
+              growth and innovation, I am eager to build cutting-edge products in the fast-growing machine learning industry.
             </p>
             <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
+            <a href="mailto:aveek.g.uk@gmail.com" class="btn">Email Me</a>
           </div>
 
           <div class="about__photo-container">
             <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+            <img class="about__photo" src="./images/about-me.png" alt="" />
           </div>
         </div>
       </div>
     </section>
   </main>
-
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
-      </div>
-    </div>
-  </section>
 
   <!-- ***** Footer ***** -->
 
@@ -328,22 +253,17 @@
       <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
+          <a href="https://github.com/magichampz" title="Link to Github Profile">
             <img src="./images/github.svg" class="footer__social-image" alt="Github">
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
+          <a href="https://medium.com/@aveekgoswami" title="Link to Codepen Profile">
+            <img src="./images/medium.svg" class="footer__social-image" alt="Codepen">
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
+          <a href="https://www.linkedin.com/in/aveekg00/">
             <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
           </a>
         </li>
@@ -353,12 +273,6 @@
       <p>
         &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
       </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
     </div>
   </footer>
 

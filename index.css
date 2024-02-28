@@ -215,8 +215,12 @@ body:not(.user-is-tabbing) a:focus {
 
 .btn {
     position: relative;
-    display: inline-block;
-    padding: 1rem 4.2rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 20px; /* Adjust the value as needed to control the roundness */
+    padding: 10px 20px; 
+    /* padding: 1rem 4.2rem; */
+    margin-right: 10px;
     text-decoration: none;
     color: inherit;
     border: 1px solid  var(--pink);
@@ -231,6 +235,7 @@ body:not(.user-is-tabbing) a:focus {
     content: '';
     display: block;
     position: absolute;
+    border-radius: 20px; /* Adjust the value as needed to control the roundness */
     top: 0;
     left: 0;
     right: 100%;
@@ -238,6 +243,17 @@ body:not(.user-is-tabbing) a:focus {
     height: 100%;
     z-index: -1;
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.btn-icon {
+    width: 20px; /* Adjust the width of the icon */
+    height: 20px; /* Adjust the height of the icon */
+    display: block; /* Make sure the image behaves as a block element */
+    /* position: absolute; Position the icon relative to the button */
+    top: 50%; /* Align the icon vertically */
+    left: 50%; /* Align the icon horizontally */
+    /* transform: translate(-50%, -50%); Center the icon */
+    margin-right: 8px;
 }
 
 .btn:hover::after,
@@ -263,10 +279,11 @@ body:not(.user-is-tabbing) a:focus {
 .link__text {
     position: relative;
     display: inline-block;
-    padding: .6rem;
+    padding: .2rem;
     color: inherit;
     text-decoration: none;
     border-bottom: 1px solid var(--pink);
+    margin-right: 10px;
 }
 
 .link__text::after {
@@ -492,7 +509,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__box:not(:last-child) {
-    margin-bottom: 25rem;
+    margin-bottom: 10rem;
 }
 
 @media(max-width: 500px) {
@@ -529,6 +546,15 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__image-box {
     margin-bottom: var(--gutter-normal);
+}
+
+/* .work__image { */
+    /* Add your styling for the image, e.g., width, height */
+/* } */
+  
+.work__image-box a {
+    display: block; /* Makes the entire area clickable */
+    text-decoration: none; /* Removes underline from the link */
 }
 
 @media(min-width: 901px) {
